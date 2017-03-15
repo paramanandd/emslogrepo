@@ -42,7 +42,7 @@ public class EmployeeController {
 	public String viewHome() throws UnknownHostException {
 
 		logger.info(" ECS_cluster = " + System.getenv("ECS_CLUSTER") + " " + " Server address = "
-				+ InetAddress.getLocalHost() + " Continer Host Name = " + System.getenv("HOST_NAME") + " HTTP Method = "
+				+ InetAddress.getLocalHost() + " Continer Host Name = " + System.getenv("HOSTNAME") + " HTTP Method = "
 				+ "GET" + " Resource path = " + "/home" + " Application Name = " + "EMSService");
 
 		return "home";
